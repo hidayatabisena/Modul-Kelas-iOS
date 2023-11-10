@@ -14,13 +14,13 @@ The learning resources in this repository are deisgned to cater to students of a
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/hidayatabisena/Modul-Kelas-iOS.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd Modul-Kelas-iOS
 ```
 
 Double click the `xcodeproj` files on each folder
