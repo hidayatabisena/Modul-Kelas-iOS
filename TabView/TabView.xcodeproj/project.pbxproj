@@ -11,6 +11,7 @@
 		53A276462AFF5B09006DA8F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A276452AFF5B09006DA8F3 /* ContentView.swift */; };
 		53A276482AFF5B0C006DA8F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A276472AFF5B0C006DA8F3 /* Assets.xcassets */; };
 		53A2764B2AFF5B0C006DA8F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A2764A2AFF5B0C006DA8F3 /* Preview Assets.xcassets */; };
+		53A276522AFF5C93006DA8F3 /* HidesBottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A276512AFF5C93006DA8F3 /* HidesBottomBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		53A276452AFF5B09006DA8F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		53A276472AFF5B0C006DA8F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53A2764A2AFF5B0C006DA8F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		53A276512AFF5C93006DA8F3 /* HidesBottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HidesBottomBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				53A276432AFF5B09006DA8F3 /* TabViewApp.swift */,
 				53A276452AFF5B09006DA8F3 /* ContentView.swift */,
+				53A276512AFF5C93006DA8F3 /* HidesBottomBar.swift */,
 				53A276472AFF5B0C006DA8F3 /* Assets.xcassets */,
 				53A276492AFF5B0C006DA8F3 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53A276522AFF5C93006DA8F3 /* HidesBottomBar.swift in Sources */,
 				53A276462AFF5B09006DA8F3 /* ContentView.swift in Sources */,
 				53A276442AFF5B09006DA8F3 /* TabViewApp.swift in Sources */,
 			);
