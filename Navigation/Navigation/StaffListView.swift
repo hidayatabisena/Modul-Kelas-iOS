@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StaffListView: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 ForEach(staff) { staff in
                     NavigationLink(destination: PersonDetailView(staff: staff)) {
@@ -65,7 +65,7 @@ struct PersonDetailView: View {
                     .font(.subheadline)
             }
             .padding()
-        .toolbarBackground(.hidden, for: .navigationBar)
+            .toolbarBackground(.hidden, for: .navigationBar)
         } // add this modifier
     }
 }
