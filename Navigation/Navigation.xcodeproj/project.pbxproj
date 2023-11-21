@@ -14,6 +14,8 @@
 		53020B352B00A8D7005470E2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53020B342B00A8D7005470E2 /* Person.swift */; };
 		53020B392B00A96A005470E2 /* ScreenB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53020B382B00A96A005470E2 /* ScreenB.swift */; };
 		53020B3B2B00A976005470E2 /* ScreenC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53020B3A2B00A976005470E2 /* ScreenC.swift */; };
+		53B338112B0CBCF500BFA474 /* ClearNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B338102B0CBCF500BFA474 /* ClearNavBarView.swift */; };
+		53B338132B0CC08900BFA474 /* StaffListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B338122B0CC08900BFA474 /* StaffListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		53020B342B00A8D7005470E2 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		53020B382B00A96A005470E2 /* ScreenB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenB.swift; sourceTree = "<group>"; };
 		53020B3A2B00A976005470E2 /* ScreenC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenC.swift; sourceTree = "<group>"; };
+		53B338102B0CBCF500BFA474 /* ClearNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearNavBarView.swift; sourceTree = "<group>"; };
+		53B338122B0CC08900BFA474 /* StaffListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +63,10 @@
 			children = (
 				53020B262B00A83C005470E2 /* NavigationApp.swift */,
 				53020B342B00A8D7005470E2 /* Person.swift */,
+				53B338102B0CBCF500BFA474 /* ClearNavBarView.swift */,
 				53020B282B00A83C005470E2 /* ScreenA.swift */,
 				53020B3A2B00A976005470E2 /* ScreenC.swift */,
+				53B338122B0CC08900BFA474 /* StaffListView.swift */,
 				53020B382B00A96A005470E2 /* ScreenB.swift */,
 				53020B2A2B00A83E005470E2 /* Assets.xcassets */,
 				53020B2C2B00A83E005470E2 /* Preview Content */,
@@ -148,8 +154,10 @@
 			files = (
 				53020B352B00A8D7005470E2 /* Person.swift in Sources */,
 				53020B3B2B00A976005470E2 /* ScreenC.swift in Sources */,
+				53B338112B0CBCF500BFA474 /* ClearNavBarView.swift in Sources */,
 				53020B292B00A83C005470E2 /* ScreenA.swift in Sources */,
 				53020B392B00A96A005470E2 /* ScreenB.swift in Sources */,
+				53B338132B0CC08900BFA474 /* StaffListView.swift in Sources */,
 				53020B272B00A83C005470E2 /* NavigationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
