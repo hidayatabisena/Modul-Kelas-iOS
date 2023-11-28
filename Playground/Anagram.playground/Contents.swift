@@ -19,11 +19,8 @@ func isAnagramShorterVersion(_ s: String, _ t: String) -> Bool {
     let lowercaseS = s.lowercased()
     let lowercaseT = t.lowercased()
     
-    let leftS = Dictionary(grouping: lowercaseS, by: { $0 })
-        .mapValues { $0.count }
-    let rightT = Dictionary(grouping: lowercaseT, by: { $0 }).mapValues { $0.count }
-    
-    return leftS == rightT
+    return Dictionary(grouping: lowercaseS, by: { $0 })
+        .mapValues { $0.count } == Dictionary(grouping: lowercaseT, by: { $0 }).mapValues { $0.count }
 }
 
 print(isAnagramShorterVersion("Supermassive Black Hole", "Bulkier Chassmoves Pale"))
