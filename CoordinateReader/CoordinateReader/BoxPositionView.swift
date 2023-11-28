@@ -34,7 +34,7 @@ struct DraggableBox: View {
     @GestureState private var dragState = CGSize.zero
     @State private var boxLocation: CGPoint = .zero
     @State private var cornerPositions: CornerPositions = CornerPositions(topLeft: .zero, topRight: .zero, bottomLeft: .zero, bottomRight: .zero)
-
+    
     var body: some View {
         VStack {
             GeometryReader { geometry in
@@ -58,10 +58,10 @@ struct DraggableBox: View {
                     .position(self.boxLocation)
                     .coordinateSpace(name: "coordinateSpace")
             }
-
+            
             Text("Box Location (x, y): \(Int(boxLocation.x)), \(Int(boxLocation.y))")
                 .padding()
-
+            
             Text("Top Left (x, y): \(Int(cornerPositions.topLeft.x)), \(Int(cornerPositions.topLeft.y))")
                 .padding(.bottom, 5)
             Text("Top Right (x, y): \(Int(cornerPositions.topRight.x)), \(Int(cornerPositions.topRight.y))")
@@ -72,15 +72,15 @@ struct DraggableBox: View {
                 .padding(.bottom, 5)
         }
     }
-
+    
     private func updateCornerPositions(boxLocation: CGPoint, geometry: GeometryProxy) {
         let boxSize = CGSize(width: 100, height: 100) // Box size, change as needed
-
+        
         let topLeft = CGPoint(x: boxLocation.x - boxSize.width / 2, y: boxLocation.y - boxSize.height / 2)
         let topRight = CGPoint(x: boxLocation.x + boxSize.width / 2, y: boxLocation.y - boxSize.height / 2)
         let bottomLeft = CGPoint(x: boxLocation.x - boxSize.width / 2, y: boxLocation.y + boxSize.height / 2)
         let bottomRight = CGPoint(x: boxLocation.x + boxSize.width / 2, y: boxLocation.y + boxSize.height / 2)
-
+        
         DispatchQueue.main.async {
             self.cornerPositions = CornerPositions(
                 topLeft: topLeft,
