@@ -8,19 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		534C85542B15D74000120021 /* CoordinateReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534C85532B15D74000120021 /* CoordinateReaderApp.swift */; };
-		534C85562B15D74000120021 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534C85552B15D74000120021 /* ContentView.swift */; };
 		534C85582B15D74100120021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534C85572B15D74100120021 /* Assets.xcassets */; };
 		534C855B2B15D74100120021 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534C855A2B15D74100120021 /* Preview Assets.xcassets */; };
 		534C85622B15D98600120021 /* BoxPositionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534C85612B15D98600120021 /* BoxPositionView.swift */; };
+		537D59BE2B16E84D00D5905C /* SwiftUIDigitalSignature in Frameworks */ = {isa = PBXBuildFile; productRef = 537D59BD2B16E84D00D5905C /* SwiftUIDigitalSignature */; };
+		537D59C02B16E88200D5905C /* SignatureViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537D59BF2B16E88200D5905C /* SignatureViewTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		534C85502B15D74000120021 /* CoordinateReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinateReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		534C85532B15D74000120021 /* CoordinateReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateReaderApp.swift; sourceTree = "<group>"; };
-		534C85552B15D74000120021 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		534C85572B15D74100120021 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		534C855A2B15D74100120021 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		534C85612B15D98600120021 /* BoxPositionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxPositionView.swift; sourceTree = "<group>"; };
+		537D59BF2B16E88200D5905C /* SignatureViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureViewTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				537D59BE2B16E84D00D5905C /* SwiftUIDigitalSignature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,8 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				534C85532B15D74000120021 /* CoordinateReaderApp.swift */,
-				534C85552B15D74000120021 /* ContentView.swift */,
 				534C85612B15D98600120021 /* BoxPositionView.swift */,
+				537D59BF2B16E88200D5905C /* SignatureViewTest.swift */,
 				534C85572B15D74100120021 /* Assets.xcassets */,
 				534C85592B15D74100120021 /* Preview Content */,
 			);
@@ -86,6 +88,9 @@
 			dependencies = (
 			);
 			name = CoordinateReader;
+			packageProductDependencies = (
+				537D59BD2B16E84D00D5905C /* SwiftUIDigitalSignature */,
+			);
 			productName = CoordinateReader;
 			productReference = 534C85502B15D74000120021 /* CoordinateReader.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 534C85472B15D73F00120021;
+			packageReferences = (
+				537D59BC2B16E84D00D5905C /* XCRemoteSwiftPackageReference "swiftui-digital-signature" */,
+			);
 			productRefGroup = 534C85512B15D74000120021 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,9 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				534C85562B15D74000120021 /* ContentView.swift in Sources */,
 				534C85622B15D98600120021 /* BoxPositionView.swift in Sources */,
 				534C85542B15D74000120021 /* CoordinateReaderApp.swift in Sources */,
+				537D59C02B16E88200D5905C /* SignatureViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		537D59BC2B16E84D00D5905C /* XCRemoteSwiftPackageReference "swiftui-digital-signature" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/globulus/swiftui-digital-signature";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		537D59BD2B16E84D00D5905C /* SwiftUIDigitalSignature */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 537D59BC2B16E84D00D5905C /* XCRemoteSwiftPackageReference "swiftui-digital-signature" */;
+			productName = SwiftUIDigitalSignature;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 534C85482B15D73F00120021 /* Project object */;
 }

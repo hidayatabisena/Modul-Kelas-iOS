@@ -10,7 +10,7 @@ import SwiftUI
 struct BoxPositionView: View {
     var body: some View {
         VStack {
-            Text("Draggable Box")
+            Text("Get Coordinate")
                 .font(.largeTitle)
                 .padding()
             DraggableBox()
@@ -50,7 +50,6 @@ struct DraggableBox: View {
                                 self.updateCornerPositions(boxLocation: newPosition, geometry: geometry)
                             }
                             .onEnded { value in
-                                // Perform any necessary actions when dragging ends
                                 self.boxLocation = CGPoint(x: self.boxLocation.x + value.translation.width, y: self.boxLocation.y + value.translation.height)
                                 self.updateCornerPositions(boxLocation: self.boxLocation, geometry: geometry)
                             }
