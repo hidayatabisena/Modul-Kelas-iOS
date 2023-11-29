@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		537D59CE2B16F59600D5905C /* BasicSignatureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537D59CD2B16F59600D5905C /* BasicSignatureApp.swift */; };
-		537D59D02B16F59600D5905C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537D59CF2B16F59600D5905C /* ContentView.swift */; };
+		537D59D02B16F59600D5905C /* SignatureViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537D59CF2B16F59600D5905C /* SignatureViewTest.swift */; };
 		537D59D22B16F59A00D5905C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537D59D12B16F59A00D5905C /* Assets.xcassets */; };
 		537D59D52B16F59A00D5905C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537D59D42B16F59A00D5905C /* Preview Assets.xcassets */; };
 		537D59DD2B16F61B00D5905C /* SwiftUIDigitalSignature in Frameworks */ = {isa = PBXBuildFile; productRef = 537D59DC2B16F61B00D5905C /* SwiftUIDigitalSignature */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		537D59CA2B16F59600D5905C /* BasicSignature.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicSignature.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		537D59CD2B16F59600D5905C /* BasicSignatureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicSignatureApp.swift; sourceTree = "<group>"; };
-		537D59CF2B16F59600D5905C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		537D59CF2B16F59600D5905C /* SignatureViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureViewTest.swift; sourceTree = "<group>"; };
 		537D59D12B16F59A00D5905C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		537D59D42B16F59A00D5905C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		537D59DE2B16FC7000D5905C /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
@@ -56,10 +56,10 @@
 			isa = PBXGroup;
 			children = (
 				537D59CD2B16F59600D5905C /* BasicSignatureApp.swift */,
-				537D59CF2B16F59600D5905C /* ContentView.swift */,
+				537D59CF2B16F59600D5905C /* SignatureViewTest.swift */,
+				537D59DE2B16FC7000D5905C /* ImageSaver.swift */,
 				537D59D12B16F59A00D5905C /* Assets.xcassets */,
 				537D59D32B16F59A00D5905C /* Preview Content */,
-				537D59DE2B16FC7000D5905C /* ImageSaver.swift */,
 			);
 			path = BasicSignature;
 			sourceTree = "<group>";
@@ -148,7 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				537D59D02B16F59600D5905C /* ContentView.swift in Sources */,
+				537D59D02B16F59600D5905C /* SignatureViewTest.swift in Sources */,
 				537D59DF2B16FC7000D5905C /* ImageSaver.swift in Sources */,
 				537D59CE2B16F59600D5905C /* BasicSignatureApp.swift in Sources */,
 			);

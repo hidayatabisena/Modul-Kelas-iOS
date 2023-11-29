@@ -11,7 +11,7 @@ import SwiftUI
 struct BasicSignatureApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SignatureViewTest()
         }
     }
 }

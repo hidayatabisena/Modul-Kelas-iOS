@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SignatureViewTest.swift
 //  BasicSignature
 //
 //  Created by Hidayat Abisena on 29/11/23.
@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftUIDigitalSignature
 
-struct ContentView: View {
+struct SignatureViewTest: View {
     @State private var signatureImage: UIImage?
     @State private var showAlert = false
     @State private var imagePath: String = ""
@@ -18,7 +18,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                NavigationLink("Tap to Sign here...") {
+                // NavigationLink("Tap to Sign here...") {
                     SignatureView(
                         availableTabs: [.draw, .image, .type]) { image in
                             self.signatureImage = image
@@ -28,12 +28,14 @@ struct ContentView: View {
                             self.showAlert.toggle()
                         }
                     
-                }
+                // }
                 
                 if signatureImage != nil {
                     Image(uiImage: signatureImage!)
                         .resizable()
-                        .aspectRatio(contentMode: .fill)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(maxHeight: 300)
+                        .padding()
                 }
             }
             .alert(isPresented: $showAlert) {
@@ -74,5 +76,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    SignatureViewTest()
 }
