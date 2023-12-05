@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         List(NSLocale.isoCountryCodes, id: \.self) { countryCode in
             HStack {
-                Text(countryFlag(countryCode))
+                Text(countryFlag(in: countryCode))
                 Text(Locale.current.localizedString(forRegionCode: countryCode) ?? "")
                 Spacer()
                 Text(countryCode)
@@ -19,7 +19,7 @@ struct ContentView: View {
         }
     }
     
-    func countryFlag(_ countryCode: String) -> String {
+    func countryFlag(in countryCode: String) -> String {
         String(String.UnicodeScalarView(countryCode.unicodeScalars.compactMap {
             UnicodeScalar(127397 + $0.value)
         }))
